@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<div class="input">
+    <h2>الاسم</h2>
+    <input type="text"  id="name" placeholder="ادخل الاسم ثلاثى">
+</div>
+<div class="input">
+    <h2>اليوم</h2>
+    <input type="text" id="day" placeholder="اليوم">
+</div>
+<div class="all">
+        <div class="stay">
+            <h2>حضور و انصراف</h2>
+            <div class="inputs">
+                <input type="number" id="come" placeholder="حضور">
+                <input type="number" id="go" placeholder="انصراف">
+            </div>
+        </div>
+        <div class="extra">
+            <h2>وقت اضافى</h2>
+            <div class="inputs">
+                <input type="number" id="from" placeholder="من">
+                <input type="number" id="to" placeholder="الى">
+            </div>
+        </div>
+</div>
+<div class="input">
+    <h2>مكافئه</h2>
+    <input type="text" id="reward" placeholder="مكافئه">
+</div>
+<div class="input">
+    <h2>خصم</h2>
+    <input type="text" id="discount" placeholder="  خصم">
+</div>
+    <button id="create" type="button">تسجيل</button>
+    <input type="search" onkeyup="search(value)" id="search" placeholder="البحث عن موظفين">
+</div>
+<div class="show">
+    <div id="deleteall">
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>الاسم</th>
+                <th>اليوم</th>
+                <th>الحضور</th>
+                <th>الانصراف</th>
+                <th>من</th>
+                <th>الى</th>
+                <th>مكافئه</th>
+                <th>خصم</th>
+                <th>تعديل</th>
+                <th>حذف</th>
+            </tr>
+        </thead>
+     
+        <tbody id="tbody">
+         
+        </tbody>
+    </table>
+</div>
+<script src="time.js"></script>
+</body>
+</html>

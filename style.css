@@ -1,0 +1,180 @@
+/* defoald */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+input{
+    color: #Fff;
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+    font-size: 19px;
+    background-color: var(--inputs-color);
+}
+:root{
+    --background-color: #0247c7;
+    --container-color:#000f96;
+    --inputs-color:#00184b;
+    --table-color:#001449;
+}
+::placeholder {
+    color: #fff;
+    opacity: .7;
+    font-weight: 800;
+}
+body{
+    background-color: var(--background-color);
+    text-align: right;
+    direction: rtl;
+}
+h1,h2,h3{
+    color: #fff;
+}
+/* all content */
+.container{
+    margin: 25px;
+    background-color: var(--container-color);
+    border-radius: 10px;
+}
+.container .all{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.container .all .stay ,.container .all .extra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.container .all .stay .inputs input, .container .all .extra .inputs input {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px ;
+}
+.container .input{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+.container .input h2{
+    margin-left: 20px;
+}
+.container .input #name , .container .input #reward , .container .input #discount , .container .input #day{
+    width: 100%;
+   padding: 15px 10px;
+   border-radius: 10px;
+}
+
+.container .input .stay h2{
+    text-align: center;
+}
+
+#create{
+    margin: 10px ;
+    width: 95%;
+    padding: 10px;
+    border-radius: 18px;
+    background-color: var(--background-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 900;
+}
+#search{
+    margin: 10px;
+    width: 95%;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+#deleteall{
+    width: 80%;
+    margin:  15px auto;
+    text-align: center;
+  
+}
+#deleteall button{
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--background-color);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+
+/* table */
+.show{
+    min-width: 700px; 
+    background-color: var(--table-color);
+    margin: 25px auto;
+    border-radius: 10px;
+    height: fit-content;
+}
+table{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+table tr th{
+    font-weight: 1000;
+    font-size: 20px;
+    color: #3d81ff;
+   
+}
+table tr td{
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+table tr td button{
+    width: 70px;
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    background-color: var(--background-color);
+    color: #fff;
+    font-weight: 800;
+    border-radius: 8px;
+    cursor: pointer;
+}
+/* media */
+@media (max-width:650px) {
+    .all{
+        display: flex;
+        flex-direction: column;
+        
+    }
+        .stay  ,
+        .extra {
+            width: 80%;
+        }
+        .stay .inputs, 
+        .extra .inputs {
+            width: 100%;
+        }
+
+}
+@media  (max-width:1160px) {
+    .stay .inputs,.extra .inputs{
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+@media (max-width:600px){
+    body{
+        display: flex;
+    }
+}
+
